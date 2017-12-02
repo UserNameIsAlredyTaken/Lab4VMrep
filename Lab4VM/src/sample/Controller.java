@@ -60,9 +60,12 @@ public class Controller {
                 chart.getData().clear();
                 XYChart.Series series = new XYChart.Series();
                 ObservableList<XYChart.Data> datas = FXCollections.observableArrayList();
-                Interpolate inter = new Interpolate();
-                for(double i=0; i<x1; i+=0.01){
-                    datas.add(new XYChart.Data(i,inter.polinomValue(difur.getX().length-1,difur.getX(),inter.computeCoef(difur.getX().length-1,difur.getX(),difur.getY()),i)));
+//                Interpolate inter = new Interpolate();
+//                for(double i=difur.getX()[0]; i<x1-0.1; i+=0.01){
+//                    datas.add(new XYChart.Data(i,inter.polinomValue(difur.getX().length-1,difur.getX(),inter.computeCoef(difur.getX().length-1,difur.getX(),difur.getY()),i)));
+//                }
+                for(int i = 0; i<difur.getSteps()+1; i++){
+                    datas.add(new XYChart.Data(difur.getX()[i],difur.getY()[i]));
                 }
                 series.setData(datas);
                 chart.getData().add(series);

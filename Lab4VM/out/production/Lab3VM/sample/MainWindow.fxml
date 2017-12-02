@@ -23,12 +23,12 @@
       </LineChart>
       <VBox prefHeight="400.0" prefWidth="272.0">
          <children>
-            <RadioButton fx:id="func1" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" selected="true" text="RadioButton">
+            <RadioButton fx:id="func1" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" selected="true" text="2*x-y+x^2">
                <toggleGroup>
                   <ToggleGroup fx:id="group" />
                </toggleGroup></RadioButton>
-            <RadioButton fx:id="func2" mnemonicParsing="false" prefHeight="24.0" prefWidth="145.0" text="RadioButton" toggleGroup="$group" />
-            <RadioButton fx:id="func3" mnemonicParsing="false" prefHeight="32.0" prefWidth="129.0" text="RadioButton" toggleGroup="$group" />
+            <RadioButton fx:id="func2" mnemonicParsing="false" prefHeight="24.0" prefWidth="145.0" text="x+y" toggleGroup="$group" />
+            <RadioButton fx:id="func3" mnemonicParsing="false" prefHeight="32.0" prefWidth="129.0" text="Cos(x)*y" toggleGroup="$group" />
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
                   <VBox prefHeight="124.0" prefWidth="77.0">
